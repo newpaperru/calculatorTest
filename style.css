@@ -151,12 +151,6 @@ body {
 
 @media (max-width: 950px) {
    body {
-      flex-direction: column;
-   }
-}
-
-@media (max-width: 519px) {
-   body {
       display: block;
    }
 
@@ -168,3 +162,4 @@ body {
       margin: 50px auto;
    }
 }
+
