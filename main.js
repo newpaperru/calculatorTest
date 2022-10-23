@@ -47,7 +47,7 @@ function handleSymbol(symbol) {
         case '×':
         case '÷':
         case '%':
-        case '√': 
+        case '√':
             handleMath(symbol);
             break;
     }
@@ -62,7 +62,7 @@ function handleMath(symbol) {
     if(runningTotal === 0) {
         runningTotal = flBuffer;
     }
-    else {
+    else if (previousOperator < 1){
         flushOperation(flBuffer)
     }
     previousOperator = symbol;
