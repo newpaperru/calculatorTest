@@ -81,12 +81,10 @@ function flushOperation(flBuffer) {
             runningTotal /= flBuffer
     } else if (previousOperator === '%' && flBuffer <= 100) {
         runningTotal = runningTotal / 100 * flBuffer;
-    } else {
+    } else if (previousOperator === '%' && flBuffer > 100){
       confirm("процент это от 1-100....");
       location.reload();
-    }
-    
-    if (previousOperator === '√') {
+    } else if (previousOperator === '√') {
         runningTotal = runningTotal ** (1 / flBuffer);
     }
     runningTotal = parseFloat(runningTotal.toFixed(4));
