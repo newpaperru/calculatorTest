@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
 html {
     height: 100%;
     box-sizing: border-box;
@@ -13,7 +15,7 @@ html {
 body {
     height: inherit;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background: rgb(238, 174, 202);
     background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
@@ -31,7 +33,7 @@ body {
     -webkit-backdrop-filter: blur(4px);
     background: rgba(255, 255, 255, .30);
     border: 1px solid rgba(255, 255, 255, .34);
-    flex-basis: 400px;
+    width: 400px;
     height: 540px;
     padding: 20px;
 }
@@ -111,4 +113,58 @@ body {
 
 .quintuple {
     flex-basis: 100%;
+}
+
+/* hint-wrapper  */
+.hint-wrapper {
+   max-width: 400px;
+}
+
+.hider, #hidden {
+   font-family: 'Russo One', sans-serif;
+   font-weight: 400;
+   font-size: 24px;
+}
+
+#hidden {
+   font-size: 20px;
+}
+
+.percent, .sqrd {
+   margin-top: 10px;
+   text-align: left;
+   opacity: 0.6;
+}
+
+.sqrd > span, .percent > span {
+   opacity: 1;
+   color: red;
+}
+
+.warning {
+   color: black;
+   opacity: 1;
+   margin-top: 20px;
+}
+
+/* media */
+
+@media (max-width: 950px) {
+   body {
+      flex-direction: column;
+   }
+}
+
+@media (max-width: 519px) {
+   body {
+      display: block;
+   }
+
+   .wrapper {
+      margin: 0 auto;
+   }
+
+   .hint-wrapper {
+      margin: 50px auto;
+   }
 }
