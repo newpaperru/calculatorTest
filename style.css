@@ -1,0 +1,114 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+.wrapper {
+    backdrop-filter: blue(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255,255,255, 0.75);
+    border: 1px solid rgba(255,255,255,0.01);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, .1);
+    color: #232323;
+    backdrop-filter: blue(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, .30);
+    border: 1px solid rgba(255, 255, 255, .34);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px;
+}
+
+.screen {
+    backdrop-filter: blue(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, .1);
+    color: #232323;
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    height: 82px;
+    width: 100%;
+}
+
+
+.calc-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calc-button-row:last-child > .calc-button {
+    flex-basis: 15%;
+}
+
+.calc-button-row:last-child > .calc-button:first-child,
+.calc-button-row:last-child > .calc-button:nth-child(2) {
+    flex-basis: 20%;
+}
+
+.calc-button {
+    backdrop-filter: blue(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, .1);
+    color: #232323;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 65px;
+}
+
+.calc-button:last-child, .operator{
+    color: #fff;
+    background: #eb0e0e;
+    flex-basis: 15%;
+}
+
+.calc-button:last-child:hover {
+    background-color: inherit;
+    color: inherit;
+}
+
+.calc-button:hover {
+    background-color: inherit;
+}
+
+.calc-button:active {
+    background-color: #ef6d09;
+}
+
+.double {
+    flex-basis: 47%;   
+}
+
+.triple {
+    flex-basis: 73%;
+}
+
+.quintuple {
+    flex-basis: 100%;
+}
