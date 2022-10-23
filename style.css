@@ -117,7 +117,22 @@ body {
 
 /* hint-wrapper  */
 .hint-wrapper {
-   max-width: 400px;
+   width: 400px;
+}
+
+.hider {
+   cursor: pointer;
+   text-align: center;
+}
+
+.icon_arrow {
+   display: inline-block;
+   transition: transform .2s;
+   transition-delay: 500ms;
+}
+
+.icon_arrow.active {
+   transform: rotate(90deg);
 }
 
 .hider, #hidden {
