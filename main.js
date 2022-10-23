@@ -112,3 +112,8 @@ $(document).ready(function(){
        return false;
    });
 });
+
+$('p#hint-anim').click(function(e) {
+   e.preventDefault();
+   $(this).find('span.icon_arrow').toggleClass('active');
+ });
